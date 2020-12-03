@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
+body {
+  font-family: $font;
+  color: $color-light;
+  background-color: $color-black;
+  transition: color 500ms ease, background-color 200ms linear;
+  overflow: hidden;
+}
+
+#app {
+  margin: $margin * 3/2;
+
+  p {
+    margin-bottom: 7px;
+  }
+
+  a {
+    color: $color-blue;
+    text-decoration: none;
+  }
+}

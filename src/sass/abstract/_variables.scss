@@ -1,0 +1,21 @@
+$font: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial",
+  sans-serif;
+
+$breakpoints: (
+  "small": (
+    max-width: 768px,
+  ),
+  "medium": (
+    max-width: 1024px,
+  ),
+);
+
+$margin: 25px;
+
+$color-light: rgb(229, 229, 234);
+$color-black: rgb(28, 28, 30);
+$color-lighter-black: rgb(44, 44, 46);
+$color-gray: rgb(142, 142, 147);
+$color-red: rgb(255, 69, 58);
+$color-teal: rgb(90, 200, 250);
+$color-blue: rgb(64, 156, 255);

@@ -1,0 +1,77 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-around;
+  align-items: center;
+  min-width: min-content;
+  max-width: 900px;
+
+  > div,
+  > button {
+    margin-right: $margin / 2;
+  }
+
+  @include respond-to("small") {
+    flex-direction: column;
+
+    > div,
+    > button {
+      margin-bottom: $margin / 2;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  margin: $margin / 2 0;
+
+  input {
+    margin-right: 10px;
+  }
+}
+
+.img {
+  position: relative;
+  height: 256px + 30px;
+  width: 256px + 30px;
+  background-color: $color-lighter-black;
+  border-radius: 10px;
+
+  img,
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  img {
+    height: 256px;
+    width: 256px;
+    border-radius: 5px;
+  }
+
+  span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.notif {
+  position: absolute;
+  width: max-content;
+  max-width: 500px;
+  height: max-content;
+  background-color: $color-lighter-black;
+  border-radius: 7px;
+  right: -400px;
+  bottom: $margin;
+  padding: 12px 17px;
+  z-index: 10;
+  transition: transform 1s ease;
+
+  &.visible {
+    transform: translateX(-210%);
+  }
+}
